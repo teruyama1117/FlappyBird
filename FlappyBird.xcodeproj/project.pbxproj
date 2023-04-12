@@ -13,6 +13,8 @@
 		BC05EF4029D479C7006705B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC05EF3E29D479C7006705B8 /* Main.storyboard */; };
 		BC05EF4229D479CC006705B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC05EF4129D479CC006705B8 /* Assets.xcassets */; };
 		BC05EF4529D479CC006705B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC05EF4329D479CC006705B8 /* LaunchScreen.storyboard */; };
+		BC05EF4D29D485A9006705B8 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC05EF4C29D485A9006705B8 /* GameScene.swift */; };
+		BCB5381629E323EE001F6A90 /* Coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = BCB5381529E323ED001F6A90 /* Coin.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BC05EF4129D479CC006705B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC05EF4429D479CC006705B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC05EF4629D479CC006705B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC05EF4C29D485A9006705B8 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		BCB5381529E323ED001F6A90 /* Coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Coin.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				BC05EF3829D479C7006705B8 /* AppDelegate.swift */,
 				BC05EF3A29D479C7006705B8 /* SceneDelegate.swift */,
 				BC05EF3C29D479C7006705B8 /* ViewController.swift */,
+				BC05EF4C29D485A9006705B8 /* GameScene.swift */,
 				BC05EF3E29D479C7006705B8 /* Main.storyboard */,
 				BC05EF4129D479CC006705B8 /* Assets.xcassets */,
 				BC05EF4329D479CC006705B8 /* LaunchScreen.storyboard */,
 				BC05EF4629D479CC006705B8 /* Info.plist */,
+				BCB5381529E323ED001F6A90 /* Coin.mp3 */,
 			);
 			path = FlappyBird;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				BC05EF4529D479CC006705B8 /* LaunchScreen.storyboard in Resources */,
 				BC05EF4229D479CC006705B8 /* Assets.xcassets in Resources */,
 				BC05EF4029D479C7006705B8 /* Main.storyboard in Resources */,
+				BCB5381629E323EE001F6A90 /* Coin.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 			files = (
 				BC05EF3D29D479C7006705B8 /* ViewController.swift in Sources */,
 				BC05EF3929D479C7006705B8 /* AppDelegate.swift in Sources */,
+				BC05EF4D29D485A9006705B8 /* GameScene.swift in Sources */,
 				BC05EF3B29D479C7006705B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +303,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +313,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -322,7 +330,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
