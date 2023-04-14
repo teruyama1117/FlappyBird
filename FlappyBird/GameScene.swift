@@ -118,9 +118,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
     // 画面をタップした時に呼ばれる
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if scrollNode.speed > 0 {
-            //ボタンを隠す
-            easyButton.isHidden = true
-            hardButton.isHidden = true
+            
             // 鳥の速度をゼロにする（画面の一定位置にいる）
             bird.physicsBody?.velocity = CGVector.zero
             
@@ -464,6 +462,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
         }
     }
     func restart() {
+        
+        //ボタンを隠す
+        easyButton.isHidden = true
+        hardButton.isHidden = true
+        
         // スコアを0にする
         score = 0
         scoreLabelNode.text = "Score:\(score)"
